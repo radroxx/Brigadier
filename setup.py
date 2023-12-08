@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='Brigadier',
     version='0.0.1',
-    packages=find_packages(include=['brigadier'])
+    packages=find_packages(include=['brigadier']),
     install_requires=[
         'aiohttp',
     ],
