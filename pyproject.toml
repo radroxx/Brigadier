@@ -5,13 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "Brigadier"
 
-requires-python = ">=3.5"
+requires-python = ">=3.6"
 dependencies = [
     'importlib_metadata; python_version<"3.8"',
     "packaging",
 ]
 dynamic = ["version"]
 
-
 [project.scripts]
-my-script = "brigadier.module:function"
+brigadier = "brigadier.module:function"
