@@ -7,6 +7,7 @@ setup(
     install_requires=[
         'aiohttp',
         'gunicorn',
+        'uvloop',
         'click',
     ],
     tests_require=['pytest'],
