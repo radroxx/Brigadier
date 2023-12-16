@@ -6,9 +6,11 @@ setup(
     packages=find_packages(include=['brigadier']),
     install_requires=[
         'aiohttp',
+        'gunicorn',
+        'click',
     ],
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': ['brigadier=brigadier:main']
+        'console_scripts': ['brigadier=brigadier.cli:cli']
     }
 )
