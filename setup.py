@@ -16,7 +16,7 @@ setup(
             'pytest-pep8',
             'pytest-cov'
         ]
-    }
+    },
     entry_points={
         'console_scripts': ['brigadier=brigadier.cli:cli']
     }
