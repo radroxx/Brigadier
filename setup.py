@@ -10,7 +10,13 @@ setup(
         'uvloop',
         'click',
     ],
-    tests_require=['pytest'],
+    extras_require={
+        'dev': [
+            'pytest',
+            'pytest-pep8',
+            'pytest-cov'
+        ]
+    }
     entry_points={
         'console_scripts': ['brigadier=brigadier.cli:cli']
     }
